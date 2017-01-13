@@ -1,7 +1,6 @@
 # machine_learning_examples3
 This repository contains the samples from Lazy Programmer's Udemy courses
-on Python machine learning, converted to Python3 as I go on with each   
-course.
+on Python machine learning, converted to Python3 as I go along.
 
 References:
 Original Python2 repository at
