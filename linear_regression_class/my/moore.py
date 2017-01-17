@@ -10,11 +10,13 @@ non_decimal = re.compile(r'[^\d]+')
 
 for line in open('../moore.csv'):
     r = line.split('\t')
-
-    x = int(non_decimal.sub('', r[2].split('[')[0]))
-    y = int(non_decimal.sub('', r[1].split('[')[0]))
-    X.append(x)
-    Y.append(y)
+    if len(r) < 3:
+        print("bad line: {0}".format(line))
+    else:
+        x = int(non_decimal.sub('', r[2].split('[')[0]))
+        y = int(non_decimal.sub('', r[1].split('[')[0]))
+        X.append(x)
+        Y.append(y)
 
 X = np.array(X)
 Y = np.array(Y)
