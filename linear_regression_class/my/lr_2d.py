@@ -26,3 +26,6 @@ fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(X[:,1], X[:,2], Yhat)
 plt.show()
+
+# calculate r-squared
+print("r-squared:", lr.r_squared(Y, Yhat))
